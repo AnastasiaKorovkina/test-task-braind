@@ -46,7 +46,7 @@
 					$warn+=2;
 				}
 				$count++;
-				echo "$count шаг : $err, $warn <br><br>";
+				//echo "$count шаг : $err, $warn <br><br>"; //проверка работоспособоности 
 			} while (($err !== 0) || ($warn !== 0));
 
 			echo "$count понадобилось";
@@ -58,7 +58,7 @@
 				//echo "check_deadlock <br>";
 				$err = $prev_err; //заменяем на значения с предыдущего шага
 				$warn = $prev_warn;
-				echo "Откат на шаг назад к: $err, $warn <br>";
+				//echo "Откат на шаг назад к: $err, $warn <br>";  //проверка работоспособоности
 				
 				$warn--; //примеем другой варинт исправления warning
 				$warn+=2; //
